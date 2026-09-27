@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗣️ 𝐘𝐔𝐊, 𝐒𝐏𝐄𝐀𝐊 𝐔𝐏 𝐀𝐁𝐎𝐔𝐓 𝐘𝐎𝐔𝐑 𝐅𝐀𝐕𝐎𝐑𝐈𝐓𝐄 𝐅𝐎𝐎𝐃! 🍜✨</title>
+    <style>
+        :root {
+            --primary-red: #ff00aa;
+            --dark-red: #ff00bf;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: -30px auto 40px auto;
+            padding: 0 20px;
+        }
+
+        .form-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            padding: 30px 40px;
+            margin-bottom: 25px;
+        }
+
+        h3.section-title {
+            color: var(--primary-red);
+            border-bottom: 2px solid #ffebee;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 14px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, select:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            box-shadow: 0 0 5px rgba(229, 57, 53, 0.2);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        @media (max-width: 500px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            background: #fafafa;
+            padding: 10px 14px;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .radio-option:hover {
+            background: #f1f1f1;
+        }
+
+        .radio-option input {
+            margin-right: 10px;
+            accent-color: var(--primary-red);
+        }
+
+        .btn-submit {
+            background-color: var(--primary-red);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 4px 10px rgba(236, 0, 138, 0.3);
+        }
+
+        .btn-submit:hover {
+            background-color: var(--dark-red);
+        }
+
+        #status {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🗣️ 𝐘𝐔𝐊, 𝐒𝐏𝐄𝐀𝐊 𝐔𝐏 𝐀𝐁𝐎𝐔𝐓 𝐘𝐎𝐔𝐑 𝐅𝐀𝐕𝐎𝐑𝐈𝐓𝐄 𝐅𝐎𝐎𝐃! 🍜✨</h1>
+        <p>𝐊𝐚𝐦𝐢 𝐝𝐚𝐫𝐢 𝐊𝐞𝐥𝐨𝐦𝐩𝐨𝐤 1 𝐥𝐚𝐠𝐢 𝐧𝐠𝐚𝐝𝐚𝐢𝐧 𝐬𝐮𝐫𝐯𝐞𝐢 𝐧𝐢𝐡 𝐛𝐮𝐚𝐭 𝐭𝐚𝐡𝐮 𝐥𝐞𝐛𝐢𝐡 𝐛𝐚𝐧𝐲𝐚𝐤 𝐬𝐨𝐚𝐥 𝐬𝐞𝐥𝐞𝐫𝐚, 𝐭𝐫𝐞𝐧, 𝐝𝐚𝐧 𝐦𝐚𝐤𝐚𝐧𝐚𝐧 𝐟𝐚𝐯𝐨𝐫𝐢𝐭 𝐤𝐚𝐥𝐢𝐚𝐧 𝐬𝐞𝐦𝐮𝐚. 🍔</p>
+        <p>𝐁𝐨𝐥𝐞𝐡 𝐦𝐢𝐧𝐭𝐚 𝐭𝐨𝐥𝐨𝐧𝐠 𝐰𝐚𝐤𝐭𝐮𝐧𝐲𝐚 𝐬𝐞𝐛𝐞𝐧𝐭𝐚𝐫 𝐛𝐮𝐚𝐭 𝐢𝐬𝐢 𝐬𝐮𝐫𝐯𝐞𝐢 𝐢𝐧𝐢 𝐬𝐞𝐬𝐮𝐚𝐢 𝐝𝐞𝐧𝐠𝐚𝐧 𝐩𝐢𝐥𝐢𝐡𝐚𝐧 𝐝𝐚𝐧 𝐬𝐞𝐥𝐞𝐫𝐚 𝐤𝐚𝐥𝐢𝐚𝐧, 𝐲𝐚? 🫶🏻</p>
+        <p>𝐒𝐞𝐦𝐮𝐚 𝐣𝐚𝐰𝐚𝐛𝐚𝐧 𝐝𝐚𝐫𝐢 𝐤𝐚𝐥𝐢𝐚𝐧 𝐛𝐚𝐤𝐚𝐥 𝐛𝐞𝐧𝐞𝐫-𝐛𝐞𝐧𝐞𝐫 𝐧𝐠𝐞𝐛𝐚𝐧𝐭𝐮 𝐛𝐚𝐧𝐠𝐞𝐭 𝐛𝐮𝐚𝐭 𝐭𝐮𝐠𝐚𝐬 𝐩𝐞𝐧𝐠𝐮𝐦𝐩𝐮𝐥𝐚𝐧 𝐝𝐚𝐭𝐚 𝐤𝐚𝐦𝐢. 📈✨</p>
+        <p>𝐌𝐚𝐤𝐚𝐬𝐢𝐡 𝐛𝐚𝐧𝐲𝐚𝐤 𝐲𝐚 𝐛𝐮𝐚𝐭 𝐰𝐚𝐤𝐭𝐮 𝐝𝐚𝐧 𝐩𝐚𝐫𝐭𝐢𝐬𝐢𝐩𝐚𝐬𝐢𝐧𝐲𝐚! 🙏🏻💖</p>
+    </header>
+
+    <div class="container">
+        <form id="surveiForm">
+            
+            <!-- BAGIAN 1: IDENTITAS -->
+            <div class="form-card">
+                <h3 class="section-title">𝑰𝒅𝒆𝒏𝒕𝒊𝒕𝒂𝒔</h3>
+                
+                <div class="form-group">
+                    <label for="nama">𝑵𝒂𝒎𝒂 𝑳𝒆𝒏𝒈𝒌𝒂𝒑:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kelas">𝑲𝒆𝒍𝒂𝒔:</label>
+                    <input type="text" id="kelas" name="kelas" placeholder="Contoh: XI MIPA 1 / X-2" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Status Anda:</label>
+                    <div class="options-grid">
+                        <label class="radio-option">
+                            <input type="radio" name="status" value="Anak Murid" required> Anak Murid
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="status" value="Guru"> Guru / Staf Pengajar
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAGIAN 2: PREFERENSI KULINER -->
+            <div class="form-card">
+                <h3 class="section-title">𝑷𝒓𝒆𝒇𝒆𝒓𝒆𝒏𝒔𝒊 𝑴𝒂𝒌𝒂𝒏𝒂𝒏 𝑻𝒓𝒂𝒅𝒊𝒔𝒊𝒐𝒏𝒂𝒍</h3>
+
+                <div class="form-group">
+                    <label>𝑹𝒂𝒔𝒂 𝑴𝒂𝒌𝒂𝒏𝒂𝒏 𝒚𝒂𝒏𝒈 𝑷𝒂𝒍𝒊𝒏𝒈 𝑲𝒂𝒎𝒖 𝑺𝒖𝒌𝒂:</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="rasa" value="Gurih / Asin" required> Gurih / Asin</label>
+                        <label class="radio-option"><input type="radio" name="rasa" value="Manis"> Manis</label>
+                        <label class="radio-option"><input type="radio" name="rasa" value="Pedas"> Pedas</label>
+                        <label class="radio-option"><input type="radio" name="rasa" value="Asam / Segar"> Asam / Segar</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>𝑱𝒆𝒏𝒊𝒔 𝑱𝒂𝒋𝒂𝒏𝒂𝒏 𝑻𝒓𝒂𝒅𝒊𝒔𝒊𝒐𝒏𝒂𝒍 𝑨𝒑𝒂 𝒚𝒂𝒏𝒈 𝑷𝒂𝒍𝒊𝒏𝒈 𝑲𝒂𝒎𝒖 𝑺𝒖𝒌𝒂𝒊?</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="jenis_jajanan" value="Makanan Berat" required> Makanan Berat</label>
+                        <label class="radio-option"><input type="radio" name="jenis_jajanan" value="Camilan / Gorengan"> Camilan / Gorengan</label>
+                        <label class="radio-option"><input type="radio" name="jenis_jajanan" value="Makanan Manis / Kue"> Makanan Manis / Kue</label>
+                        <label class="radio-option"><input type="radio" name="jenis_jajanan" value="Makanan Pedas & Berkuah"> Makanan Pedas & Berkuah</label>
+                        <label class="radio-option"><input type="radio" name="jenis_jajanan" value="Lainnya" id="radioJenisLainnya"> Lainnya</label>
+                    </div>
+                    <input type="text" id="jenis_jajanan_lainnya" name="jenis_jajanan_lainnya" placeholder="Ketik jenis jajanan lainnya..." style="margin-top: 10px; display: none;">
+                </div>
+
+                <div class="form-group">
+                    <label>𝑷𝒓𝒐𝒅𝒖𝒌 𝑴𝒂𝒌𝒂𝒏𝒂𝒏 𝑻𝒓𝒂𝒅𝒊𝒔𝒊𝒐𝒏𝒂𝒍 𝑨𝒑𝒂 𝒚𝒂𝒏𝒈 𝑷𝒂𝒍𝒊𝒏𝒈 𝑲𝒂𝒎𝒖 𝑴𝒊𝒏𝒂𝒕𝒊?</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="makanan_favorit" value="Pisang Goreng" required> Pisang Goreng</label>
+                        <label class="radio-option"><input type="radio" name="makanan_favorit" value="Cireng"> Cireng</label>
+                        <label class="radio-option"><input type="radio" name="makanan_favorit" value="Risol Mayo / Spesial"> Risol</label>
+                        <label class="radio-option"><input type="radio" name="makanan_favorit" value="Klepon / Jajanan Pasar"> Klepon / Jajanan Pasar</label>
+                        <label class="radio-option"><input type="radio" name="makanan_favorit" value="Batagor / Siomay"> Batagor / Siomay</label>
+                        <label class="radio-option"><input type="radio" name="makanan_favorit" value="Lainnya" id="radioLainnya"> Lainnya</label>
+                    </div>
+                    <input type="text" id="makanan_lainnya" name="makanan_lainnya" placeholder="Ketik nama makanan tradisional lainnya..." style="margin-top: 10px; display: none;">
+                </div>
+
+                <!-- PERTANYAAN TAMBAHAN 1 -->
+                <div class="form-group">
+                    <label>𝑺𝒆𝒃𝒆𝒓𝒂𝒑𝒂 𝒔𝒆𝒓𝒊𝒏𝒈 𝒌𝒂𝒎𝒖 𝒎𝒆𝒎𝒃𝒆𝒍𝒊 𝒂𝒕𝒂𝒖 𝒎𝒆𝒏𝒈𝒐𝒏𝒔𝒖𝒎𝒔𝒊 𝒎𝒂𝒌𝒂𝒏𝒂𝒏 𝒕𝒓𝒂𝒅𝒊𝒔𝒊𝒐𝒏𝒂𝒍 𝒅𝒂𝒍𝒂𝒎 𝒔𝒆𝒎𝒊𝒏𝒈𝒈𝒖?</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="frekuensi" value="Setiap hari" required> Setiap hari</label>
+                        <label class="radio-option"><input type="radio" name="frekuensi" value="3 - 4 kali seminggu"> 3 - 4 kali seminggu</label>
+                        <label class="radio-option"><input type="radio" name="frekuensi" value="1 - 2 kali seminggu"> 1 - 2 kali seminggu</label>
+                        <label class="radio-option"><input type="radio" name="frekuensi" value="Jarang / Sesekali saja"> Jarang / Sesekali saja</label>
+                    </div>
+                </div>
+
+                <!-- PERTANYAAN TAMBAHAN 2 -->
+                <div class="form-group">
+                    <label>𝑫𝒂𝒓𝒊 𝒎𝒂𝒏𝒂 𝒌𝒂𝒎𝒖 𝒃𝒊𝒂𝒔𝒂𝒏𝒚𝒂 𝒕𝒂𝒉𝒖 𝒂𝒕𝒂𝒖 𝒎𝒆𝒏𝒅𝒂𝒑𝒂𝒕𝒌𝒂𝒏 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒔𝒊 𝒕𝒆𝒏𝒕𝒂𝒏𝒈 𝒎𝒂𝒌𝒂𝒏𝒂𝒏 𝒕𝒓𝒂𝒅𝒊𝒔𝒊𝒐𝒏𝒂𝒍 𝒚𝒂𝒏𝒈 𝒎𝒆𝒏𝒂𝒓𝒊𝒌?</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="sumber_info" value="Media Sosial (TikTok / IG)" required> Media Sosial (TikTok / IG)</label>
+                        <label class="radio-option"><input type="radio" name="sumber_info" value="Rekomendasi Teman / Keluarga"> Rekomendasi Teman / Keluarga</label>
+                        <label class="radio-option"><input type="radio" name="sumber_info" value="Melihat langsung di Kantin / Pasar"> Melihat langsung di Kantin / Pasar</label>
+                        <label class="radio-option"><input type="radio" name="sumber_info" value="Lainnya" id="radioInfoLainnya"> Lainnya</label>
+                    </div>
+                    <input type="text" id="sumber_info_lainnya" name="sumber_info_lainnya" placeholder="Ketik sumber informasi lainnya..." style="margin-top: 10px; display: none;">
+                </div>
+
+                <!-- PERTANYAAN TAMBAHAN 3 -->
+                <div class="form-group">
+                    <label>𝑫𝒊 𝒎𝒂𝒏𝒂 𝒕𝒆𝒎𝒑𝒂𝒕 𝒇𝒂𝒗𝒐𝒓𝒊𝒕𝒎𝒖 𝒔𝒂𝒂𝒕 𝒎𝒆𝒎𝒃𝒆𝒍𝒊 𝒂𝒕𝒂𝒖 𝒎𝒆𝒏𝒊𝒌𝒎𝒂𝒕𝒊 𝒋𝒂𝒋𝒂𝒏𝒂𝒏 𝒕𝒓𝒂𝒅𝒊𝒔𝒊𝒐𝒏𝒂𝒍?</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="tempat_beli" value="Kantin Sekolah / Kampus" required> Kantin Sekolah / Kampus</label>
+                        <label class="radio-option"><input type="radio" name="tempat_beli" value="Pedagang Kaki Lima / Pinggir Jalan"> Pedagang Kaki Lima (PKL)</label>
+                        <label class="radio-option"><input type="radio" name="tempat_beli" value="Pasar Tradisional / Sentra Jajanan"> Pasar Tradisional / Sentra Jajanan</label>
+                        <label class="radio-option"><input type="radio" name="tempat_beli" value="Lainnya" id="radioTempatLainnya"> Lainnya</label>
+                    </div>
+                    <input type="text" id="tempat_beli_lainnya" name="tempat_beli_lainnya" placeholder="Ketik tempat pembelian lainnya..." style="margin-top: 10px; display: none;">
+                </div>
+
+                <div class="form-group">
+                    <label>𝑩𝒆𝒓𝒂𝒑𝒂 𝑯𝒂𝒓𝒈𝒂 𝒚𝒂𝒏𝒈 𝑺𝒆𝒔𝒖𝒂𝒊 𝒖𝒏𝒕𝒖𝒌 1 𝑷𝒐𝒓𝒔𝒊 𝑴𝒂𝒌𝒂𝒏𝒂𝒏 𝑻𝒓𝒂𝒅𝒊𝒔𝒊𝒐𝒏𝒂𝒍?</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="harga" value="Kurang dari Rp 5.000" required> &lt; Rp 5.000</label>
+                        <label class="radio-option"><input type="radio" name="harga" value="Rp 5.000 - Rp 10.000"> Rp 5.000 - Rp 10.000</label>
+                        <label class="radio-option"><input type="radio" name="harga" value="Rp 10.000 - Rp 15.000"> Rp 10.000 - Rp 15.000</label>
+                        <label class="radio-option"><input type="radio" name="harga" value="Lebih dari Rp 15.000"> &gt; Rp 15.000</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>𝑺𝒆𝒃𝒆𝒓𝒂𝒑𝒂 𝑷𝒆𝒏𝒕𝒊𝒏𝒈 𝑲𝒆𝒎𝒂𝒔𝒂𝒏 𝒚𝒂𝒏𝒈 𝑴𝒆𝒏𝒂𝒓𝒊𝒌 𝑺𝒂𝒂𝒕 𝑴𝒆𝒎𝒃𝒆𝒍𝒊 𝑷𝒓𝒐𝒅𝒖𝒌 𝑴𝒂𝒌𝒂𝒏𝒂𝒏?</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="kemasan" value="Sangat Penting" required> Sangat Penting</label>
+                        <label class="radio-option"><input type="radio" name="kemasan" value="Penting"> Penting</label>
+                        <label class="radio-option"><input type="radio" name="kemasan" value="Cukup Penting"> Cukup Penting</label>
+                        <label class="radio-option"><input type="radio" name="kemasan" value="Tidak Penting"> Tidak Penting</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>𝑭𝒂𝒌𝒕𝒐𝒓 𝑼𝒕𝒂𝒎𝒂 𝒚𝒂𝒏𝒈 𝑫𝒊𝒑𝒆𝒓𝒕𝒊𝒎𝒃𝒂𝒏𝒈𝒌𝒂𝒏 𝑺𝒂𝒂𝒕 𝑴𝒆𝒎𝒃𝒆𝒍𝒊 𝑴𝒂𝒌𝒂𝒏𝒂𝒏:</label>
+                    <div class="options-grid">
+                        <label class="radio-option"><input type="radio" name="faktor" value="Rasa yang Lezat" required> Rasa yang Lezat</label>
+                        <label class="radio-option"><input type="radio" name="faktor" value="Harga Terjangkau"> Harga Terjangkau</label>
+                        <label class="radio-option"><input type="radio" name="faktor" value="Kebersihan & Higienitas"> Kebersihan &amp; Higienitas</label>
+                        <label class="radio-option"><input type="radio" name="faktor" value="Tren / Viral di Medsos"> Tren / Viral di Medsos</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">Kirim Jawaban Survei</button>
+                <p id="status"></p>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        // Fungsi umum untuk mengatur opsi "Lainnya" agar muncul input teks
+        function setupLainnya(radioName, inputId) {
+            const radios = document.querySelectorAll(`input[name="${radioName}"]`);
+            const inputField = document.getElementById(inputId);
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'Lainnya') {
+                        inputField.style.display = 'block';
+                        inputField.required = true;
+                    } else {
+                        inputField.style.display = 'none';
+                        inputField.required = false;
+                        inputField.value = '';
+                    }
+                });
+            });
+        }
+
+        // Terapkan fungsi ke semua opsi "Lainnya" yang ada
+        setupLainnya('jenis_jajanan', 'jenis_jajanan_lainnya');
+        setupLainnya('makanan_favorit', 'makanan_lainnya');
+        setupLainnya('sumber_info', 'sumber_info_lainnya');
+        setupLainnya('tempat_beli', 'tempat_beli_lainnya');
+
+        // Ganti URL di bawah ini dengan URL Web App dari Google Apps Script Anda
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwAp2r-CO9XYG8xf1mnjVv6tbKvaXbHMRMiBf8VFQ6v/dev';
+        const form = document.getElementById('surveiForm');
+        const statusText = document.getElementById('status');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            statusText.style.color = "#d32f2f";
+            statusText.innerText = "Mengirim data ke sistem...";
+            document.getElementById('submitBtn').disabled = true;
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    statusText.style.color = "green";
+                    statusText.innerText = "Terima kasih! Survei berhasil terkirim.";
+                    form.reset();
+                    // Sembunyikan kembali semua input lainnya
+                    document.getElementById('jenis_jajanan_lainnya').style.display = 'none';
+                    document.getElementById('makanan_lainnya').style.display = 'none';
+                    document.getElementById('sumber_info_lainnya').style.display = 'none';
+                    document.getElementById('tempat_beli_lainnya').style.display = 'none';
+                    document.getElementById('submitBtn').disabled = false;
+                })
+                .catch(error => {
+                    statusText.style.color = "red";
+                    statusText.innerText = "Terjadi kesalahan, gagal mengirim. Silakan coba lagi.";
+                    console.error('Error!', error.message);
+                    document.getElementById('submitBtn').disabled = false;
+                });
+        });
+    </script>
+</body>
+</html>
